@@ -1,0 +1,238 @@
+
+/* --font-sefont-family: 'Libre Baskerville', serif; */
+
+:root{
+    --font-primary: 'Great Vibes', cursive;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+h1.portada{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 80px;
+}
+
+.parallax-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+
+  /* Flecha para scroll de portada */
+.scroll-down {
+    cursor: pointer;
+      position: absolute;
+      bottom: 70px;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 100;
+      text-decoration: none;
+      text-shadow: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    z-index: 9;
+    left: calc(50% - 15px);
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+      -webkit-animation: fade_move_down 2s ease-in-out infinite;
+      -moz-animation:    fade_move_down 2s ease-in-out infinite;
+      animation:         fade_move_down 2s ease-in-out infinite;
+  }
+/* Portada */
+section.portada{
+    height: 100vh;
+  }  
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400 ;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Libre Baskerville', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+}
+
+button{
+    padding-inline: 25px;
+    padding-block: 15px;
+    color: #fff;
+    background-color: #d28d66;
+
+}
+
+.frase{
+    background-color: #ededed;
+    padding-block: 80px;
+    gap: 25px;
+}
+
+.bloqueCuentaRegresiva{
+    background-color: blanchedalmond;
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.cuentaRegresiva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.nuestraBoda{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.iglesia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.iglesia p:nth-child(2){
+    color: #d28d66;
+    font-size: 25px;
+}
+
+.festejo{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.festejo p:nth-child(1){
+    color: #d28d66;
+    font-size: 25px;
+}
+
+.reservaDressCode{
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.reserva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.agendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.dressCode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-block: 80px;
+    background-color: blanchedalmond;
+}
+
+.regalos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-block: 80px;
+}
+
+.canciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-block: 80px;
+    background-color: blanchedalmond;
+}
+
+.gracias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-block: 80px;
+}
