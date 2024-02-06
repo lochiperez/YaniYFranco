@@ -20,24 +20,15 @@ setInterval(() => {
     
 }, 1000);
 
-
-// Confirmar asistencia parallax
-$(".parallax-canciones").parallax({
-    imageSrc: "assets/img/canciones.jpg",
-  });
-  
-  // Portada parallax
-  $(".parallax-portada").parallax({
-    imageSrc: "assets/img/portada.jpg",
-  });
-  
-  // Gracias parallax
-  $(".parallax-gracias").parallax({
-    imageSrc: "assets/img/portada.jpg",
-  });
-  
-  // ----------------------
-  
-  // Portada
   
   var divDressCode = document.querySelector(".scroll-down");
+
+  document.getElementById('openPopup').addEventListener('click', function(){
+    document.getElementById('popup').style.display = 'block';
+  });
+  
+  document.getElementById('closePopup').addEventListener('click', function(){
+    document.getElementById('popup').style.display = 'none';
+  });
+
+  

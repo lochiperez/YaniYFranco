@@ -28,7 +28,7 @@
     <div class="frase flex flex-column justify-center items-center">
         <img src="/img/icono-frase.svg" alt="">
         <h2>Llegó el gran dia</h2>
-        <p>"Andabamos sin buscarnos, pero sabiendo que andabamos para encontrarnos</p>
+        <p class="padding-y-md padding-x-md">"Andabamos sin buscarnos, pero sabiendo que andabamos para encontrarnos</p>
         <p>Juio Cortazar</p>
     </div>
 
@@ -63,20 +63,20 @@
 
         <p>Ceremonia</p>
         <p>11 Mayo 2023</p>
-        <p>18:30 horas</p>
+        <p>18:00 horas</p>
         <p>Iglesia Don Bosco</p>
         <p>Tropezon, Córdoba</p>
 
-        <button>Cómo llegar</button>
+        <a target="_blank" href="https://maps.app.goo.gl/3DE5hQ8FW3REhK4p9"><button class="cursor-pointer">Cómo llegar</button></a>
         </div>
 
         <div class="festejo">
             <p>Festejo</p>
             <p>11 Mayo 2023</p>
-            <p>22:00 horas</p>
+            <p>20:30 horas</p>
             <p>Don Jaime</p>
             <p>Villa Retiro, Córdoba</p>
-            <button>Cómo llegar</button>
+            <a target="_blank" href="https://maps.app.goo.gl/Vj4dJDQUVSvvbaJBA"><button class="cursor-pointer">Cómo llegar</button></a>
         </div>
     </div>
 
@@ -84,18 +84,17 @@
         <div class="reserva">
             <h2>RSVP</h2>
             <p>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
-            <button>Confirmar asistencia</button>
+            <a href="" target="_blank"><button class="cursor-pointer">Confirmar asistencia</button></a>
         </div>
         <div class="agendar">
             <img src="/img/icono-calendar.svg" alt="">
             <p>¡Agendá la fecha en tu calendario!</p>
-            <button>Agendar evento</button>
+            <a class="cursor-pointer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240511T210000Z%2F20240512T080000Z&text=Boda%20de%20Yani%20Y%20Franco&text=Boda%20de%20de%20Yani%20y%20Franco" target="_blank"><button class="cursor-pointer">Agendar evento</button></a>
         </div>
         <div class="dressCode">
             <img src="/img/icono-dresscode.svg" alt="">
             <h2>Dress Code:</h2>
-            <p>Formal elegante</p>
-            <p>Nuestro casamiento sera al aire libre, sugerimos no usar taco y llevar abrigo</p>
+            <p>Elegante Sport</p>
         </div>
 
     </div>
@@ -103,29 +102,40 @@
     <div class="instagram flex flex-column justify-center items-center">
         <img src="/img/icono-instagram.svg" alt="">
         <h2>@yaniyfranco</h2>
-        <p>¡Preparate para nuestro casamiento!</p>
+        <p class="padding-y-md">¡Preparate para nuestro casamiento!</p>
         <p>Ya podes seguirnos en nuestra cuenta para ver todas las novedades del casamiento y etiquetarnos en tus fotos y videos</p>
-        <button>Ver en instagram</button>
+        <a href="https://www.instagram.com/bodayaniyfranco" target="_blank"><button class="margin-top-md cursor-pointer">Ver en instagram</button></a>
     </div>
 
     <div class="regalos flex flex-column justify-center items-center">
         <img src="/img/icono-regalo.svg" alt="">
         <p>¡El mejor regalo es tu presencia!</p>
-        <p>Si deseas realizarnos un regalo...</p>
-        <button>Ver más</button>
+        <p class="padding-y-md">Si deseas realizarnos un regalo...</p>
+        <button id="openPopup" class="cursor-pointer">Ver más</button>
     </div>
 
     <div class="canciones flex flex-column justify-center items-center">
         <h2>¡Fiesta!</h2>
-        <p>¿Qué canciones no pueden faltar en la fiesta?</p>
+        <p class="padding-y-md">¿Qué canciones no pueden faltar en la fiesta?</p>
         <p>¡Queremos crear una lista inolvidable!</p>
-        <button>Sugerir canción</button>
+        <a href="" target="_blank"><button class="margin-top-md cursor-pointer">Sugerir canción</button></a>
     </div>
 
-    <div class="gracias flex flex-column justify-center items-center">
+    <div class="gracias height-80vh flex flex-column justify-center items-center" style="background-image: url(/img/anilloYani.jpeg); background-repeat: no-repeat; background-size: 100%;">
+        <div class="gracias-frase">
         <p>♥</p>
         <p>¡Gracias por acompañarnos en este momento tan importante!</p>
+    </div>    
     </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close" id="closePopup">&times;</span>
+          <p>Nombre: Franco Alexis Mansilla</p>
+          <p>Alias: Boda.yaniyfranco</p>
+          <p>CBU: 0200939511000001341876</p>
+        </div>
+      </div>          
 
 
 
