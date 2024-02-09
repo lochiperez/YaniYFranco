@@ -171,6 +171,7 @@ button{
 }
 
 .reservaDressCode{
+    background-color:blanchedalmond;
     padding-block: 80px;
     display: flex;
     flex-direction: column;
@@ -209,7 +210,6 @@ button{
     align-items: center;
     gap: 25px;
     padding-block: 80px;
-    background-color: blanchedalmond;
 }
 
 .regalos{
@@ -219,6 +219,7 @@ button{
     align-items: center;
     gap: 25px;
     padding-block: 80px;
+    background-color: blanchedalmond;
 }
 
 .canciones{
@@ -228,7 +229,6 @@ button{
     align-items: center;
     gap: 25px;
     padding-block: 80px;
-    background-color: blanchedalmond;
 }
 
 .gracias{
@@ -292,4 +292,12 @@ button{
   .gracias-frase{
     position: absolute;
     top: 150px;
+  }
+
+  .consideraciones{
+    display: flex;
+    padding-block: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
