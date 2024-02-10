@@ -309,7 +309,7 @@ button{
   }
 
   .consideraciones h2{
-    letter-spacing: 5px;
+    letter-spacing: 1px;
   }
 
   @media screen and (min-width:1024px) {
